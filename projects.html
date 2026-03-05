@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Projects | Apex Infra Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-inner">
+            <span class="ann-item">Safety First <span class="dot">•</span> Quality Always</span>
+            <span class="ann-center">Building the Future Since 1998</span>
+            <a href="index.html#contact" class="ann-right">
+                Request a Quote
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-box">
+                    <span class="logo-apex">APEX</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link nav-contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <header class="projects-bg-header">
+        <div class="container">
+            <div class="header-flex">
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn" data-filter="renovations">Renovations</button>
+                </div>
+                <div class="project-count">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="8" y1="6" x2="21" y2="6" />
+                        <line x1="8" y1="12" x2="21" y2="12" />
+                        <line x1="8" y1="18" x2="21" y2="18" />
+                        <line x1="3" y1="6" x2="3.01" y2="6" />
+                        <line x1="3" y1="12" x2="3.01" y2="12" />
+                        <line x1="3" y1="18" x2="3.01" y2="18" />
+                    </svg>
+                    <span>Showing <span id="current-count">6</span> Completed Projects</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid-section">
+        <div class="container">
+            <div class="projects-grid" id="projects-grid">
+                <!-- Project 1: Residential -->
+                <div class="project-card reveal" data-category="residential">
+                    <div class="project-image">
+                        <img src="luxury_villa_bangsar_baru_1772707153875.png" alt="Luxury Villa Renovation">
+                        <span class="category-badge">RESIDENTIAL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Luxury Villa Renovation - Bangsar Baru</h3>
+                        <p>A complete modern overhaul of a 5,000 sq ft family residence, featuring open-plan living and
+                            high-end finishes.</p>
+                        <div class="project-footer">
+                            <span class="project-date">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                2023
+                            </span>
+                            <a href="#" class="view-details">View Details <svg width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Commercial -->
+                <div class="project-card reveal" data-category="commercial">
+                    <div class="project-image">
+                        <img src="boutique_office_lucky_garden_1772707206354.png" alt="Boutique Office Suite">
+                        <span class="category-badge">COMMERCIAL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Boutique Office Suite - Lucky Garden</h3>
+                        <p>Custom interior fit-out and structural reinforcements for a high-end commercial workspace in
+                            Lucky Garden.</p>
+                        <div class="project-footer">
+                            <span class="project-date">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                2022
+                            </span>
+                            <a href="#" class="view-details">View Details <svg width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Renovations -->
+                <div class="project-card reveal" data-category="renovations">
+                    <div class="project-image">
+                        <img src="heritage_home_restoration_telawi_1772707280348.png" alt="Heritage Home Restoration">
+                        <span class="category-badge">RENOVATIONS</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Heritage Home Restoration - Jalan Telawi</h3>
+                        <p>Preserving history with modern functionality. A delicate restoration of a colonial-era home
+                            in Bangsar.</p>
+                        <div class="project-footer">
+                            <span class="project-date">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                2023
+                            </span>
+                            <a href="#" class="view-details">View Details <svg width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Residential -->
+                <div class="project-card reveal" data-category="residential">
+                    <div class="project-image">
+                        <img src="modern_penthouse_bangsar_south_1772707330684.png" alt="Modern Penthouse">
+                        <span class="category-badge">RESIDENTIAL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Modern Penthouse - Bangsar South</h3>
+                        <p>Luxury high-rise interior construction with smart home integration and panoramic city views.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-date">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                2024
+                            </span>
+                            <a href="#" class="view-details">View Details <svg width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Commercial -->
+                <div class="project-card reveal" data-category="commercial">
+                    <div class="project-image">
+                        <img src="retail_flagship_shopping_centre_1772707586674.png" alt="Retail Flagship">
+                        <span class="category-badge">COMMERCIAL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Retail Flagship - Bangsar Shopping Centre</h3>
+                        <p>High-traffic retail design and construction focusing on brand identity and customer
+                            experience.</p>
+                        <div class="project-footer">
+                            <span class="project-date">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                2022
+                            </span>
+                            <a href="#" class="view-details">View Details <svg width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Renovations -->
+                <div class="project-card reveal" data-category="renovations">
+                    <div class="project-image">
+                        <img src="kitchen_expansion_bukit_bandaraya_v2_1772707608741.png" alt="Kitchen Expansion">
+                        <span class="category-badge">RENOVATIONS</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Kitchen Expansion - Bukit Bandaraya</h3>
+                        <p>Expanding a cramped culinary space into a chef-grade kitchen with premium imported cabinetry.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-date">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="16" y1="2" x2="16" y2="6" />
+                                    <line x1="8" y1="2" x2="8" y2="6" />
+                                    <line x1="3" y1="10" x2="21" y2="10" />
+                                </svg>
+                                2023
+                            </span>
+                            <a href="#" class="view-details">View Details <svg width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more-wrapper reveal">
+                <button class="btn-load-more" id="load-more-btn">
+                    Load More Projects
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo-box logo-box--footer">
+                    <span class="logo-apex">APEX</span>
+                </div>
+                <p>Building structures that define skylines, transform communities, and stand the test of time.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg></a>
+                    <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="index.html#hero">Overview</a>
+                    <a href="index.html#about">Our Expertise</a>
+                    <a href="projects.html">Work</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="index.html#services">Structural Engineering</a>
+                    <a href="index.html#services">Civil Construction</a>
+                    <a href="index.html#services">Project Management</a>
+                    <a href="index.html#services">Safety & Compliance</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="mailto:info@apexinfra.com">info@apexinfra.com</a>
+                    <p>123 Builder's Way,<br />Metro City, MC 10001</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Apex Infra Solutions. All rights reserved.</span>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="projects.js"></script>
+</body>
+
+</html>
