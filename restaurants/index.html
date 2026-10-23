@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Critic's Table</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Critic's Table</h1>
+  <p>Restaurants reviewed by the critics you trust.</p>
+  <p class="note">Sample data: fictional critics and restaurants. Edit <code>data.js</code> to add real ones.</p>
+</header>
+<main>
+  <section id="reviewers" aria-label="Reviewers"></section>
+  <section class="filters">
+    <input id="q" type="search" placeholder="Search name, city or cuisine">
+    <select id="sort">
+      <option value="rating">Highest rated</option>
+      <option value="year">Most recent</option>
+      <option value="name">A–Z</option>
+    </select>
+  </section>
+  <p id="count" aria-live="polite"></p>
+  <section id="list" class="grid"></section>
+</main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
